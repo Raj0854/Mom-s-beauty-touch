@@ -1,0 +1,30 @@
+# ----------------------------------------------------------------------
+# Security Hardening for Uploads Directory
+# Disables direct script execution (PHP, Perl, Python, CGI, etc.)
+# ----------------------------------------------------------------------
+
+# 1. Deny execution of any server-side script extensions
+<FilesMatch "(?i)\.(php|phtml|php3|php4|php5|php7|php8|phps|inc|pl|py|cgi|asp|sh|bat)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# 2. Disable PHP Engine if mod_php is active
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+# 3. Disable script execution options
+Options -ExecCGI -Indexes
+

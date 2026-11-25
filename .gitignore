@@ -1,0 +1,49 @@
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Private database configuration
+/config/database.php
+
+# Private uploads
+/uploads/*
+!/uploads/.htaccess
+!/uploads/gallery/
+/uploads/gallery/*
+!/uploads/gallery/.gitkeep
+!/uploads/services/
+/uploads/services/*
+!/uploads/services/.gitkeep
+
+# Database backups and exports
+/database/backups/
+/database/*backup*
+/database/*dump*
+/database/*.db
+/database/*.sqlite
+/database/*.sqlite3
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+*.swp
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,3 @@
+# Deny direct HTTP access to administrative template includes
+Require all denied
+

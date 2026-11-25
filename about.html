@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Moms Beauty Touch</title>
+  <meta name="description" content="Meet the makeup artist behind Moms Beauty Touch in Vasai-Virar and her personal approach to beauty.">
+  <meta property="og:title" content="About — Moms Beauty Touch">
+  <meta property="og:description" content="Meet the makeup artist behind Moms Beauty Touch in Vasai-Virar and her personal approach to beauty.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header glass">
+    <div class="container max-w-7xl site-header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/logo.png" alt="Moms Beauty Touch Logo" class="site-logo-img">
+        <span>Moms <em class="text-gold">Beauty</em> Touch</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Appointment</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+        <svg class="icon" id="iconMenu" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+        <svg class="icon" id="iconClose" viewBox="0 0 24 24" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <nav class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="about.html" class="mobile-nav-link active">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link">Portfolio</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="booking.html" class="mobile-nav-link">Book Appointment</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero Header -->
+    <section class="page-hero">
+      <p class="eyebrow">About</p>
+      <h1 class="page-hero-title">The artist behind the brush</h1>
+    </section>
+
+    <!-- Our Story Section -->
+    <section style="padding: 6rem 0;">
+      <div class="container max-w-6xl">
+        <div style="display: grid; gap: 4rem; align-items: center;" id="aboutStoryGrid">
+          <div class="reveal">
+            <div class="img-zoom aspect-4-5 rounded-sm shadow-soft">
+              <img src="assets/images/hero.jpg" alt="Makeup by Moms Beauty Touch" class="object-cover">
+            </div>
+          </div>
+          <div class="reveal" style="transition-delay: 150ms;">
+            <p class="eyebrow">Our story</p>
+            <h2 style="margin-top: 1rem; font-size: clamp(2rem, 4vw, 2.75rem);">Beauty, made personal</h2>
+            <p style="margin-top: 1.5rem; color: var(--muted-foreground); line-height: 1.7; font-size: 1.0625rem;">
+              Moms Beauty Touch is a makeup studio based in Kaner, Vasai-Virar, specialising in bridal, wedding, party and engagement makeup. For the past year we've been helping clients feel confident and beautiful on the days that matter most.
+            </p>
+            <p style="margin-top: 1rem; color: var(--muted-foreground); line-height: 1.7; font-size: 1.0625rem;">
+              Every appointment starts with listening — to your plans, your style and how you want to feel — so the result is unmistakably you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values Grid Section -->
+    <section style="background-color: var(--secondary-50); padding: 6rem 0;">
+      <div class="container max-w-6xl">
+        <div style="display: grid; gap: 3rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <!-- Philosophy -->
+          <div class="reveal" style="transition-delay: 0ms;">
+            <h3 style="font-size: 1.875rem;">Philosophy</h3>
+            <p style="margin-top: 0.75rem; color: var(--muted-foreground); line-height: 1.6;">
+              Enhance, never mask. Makeup should bring out your natural features.
+            </p>
+          </div>
+
+          <!-- Experience -->
+          <div class="reveal" style="transition-delay: 120ms;">
+            <h3 style="font-size: 1.875rem;">Experience</h3>
+            <p style="margin-top: 0.75rem; color: var(--muted-foreground); line-height: 1.6;">
+              One year of creating looks for brides, families and celebrations across Vasai-Virar.
+            </p>
+          </div>
+
+          <!-- Your Way -->
+          <div class="reveal" style="transition-delay: 240ms;">
+            <h3 style="font-size: 1.875rem;">Your way</h3>
+            <p style="margin-top: 0.75rem; color: var(--muted-foreground); line-height: 1.6;">
+              Each look is designed around your skin, outfit, jewellery and occasion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Landscape Banner Section -->
+    <section style="padding: 6rem 0; text-align: center;">
+      <div class="container max-w-6xl reveal">
+        <div class="aspect-21-9 rounded-sm overflow-hidden" style="overflow: hidden;">
+          <img src="assets/images/studio.jpg" alt="Makeup kit studio" loading="lazy" class="object-cover rounded-sm">
+        </div>
+        <div style="margin-top: 3rem;">
+          <a href="booking.html" class="btn btn-primary">Book Your Appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container max-w-7xl footer-grid">
+      <div>
+        <p class="footer-brand">Moms Beauty Touch</p>
+        <p class="footer-desc">Professional makeup artistry in Vasai-Virar for bridal, wedding, party and engagement looks.</p>
+        <p class="footer-rating">
+          <svg class="icon icon-sm icon-gold-fill" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          4.52 on Google
+        </p>
+      </div>
+      <div>
+        <p class="footer-col-title">Visit</p>
+        <p class="footer-text">Near Manti Memorial High School, Naleswar Nagar, Kaner, Vasai-Virar, Maharashtra 401303, India</p>
+        <p class="footer-text" style="margin-top: 0.75rem;">Open 24 hours</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Explore</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.instagram.com/moms_beauty_touch" target="_blank" rel="noreferrer" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Instagram
+          </a>
+          <a href="tel:+917219884594">+91 72198 84594</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; <span id="currentYear"></span> Moms Beauty Touch
+    </div>
+  </footer>
+
+  <!-- Floating Instagram CTA Button -->
+  <a href="https://www.instagram.com/moms_beauty_touch" target="_blank" rel="noreferrer" class="insta-float-btn" aria-label="Follow on Instagram">
+    <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+  </a>
+
+  <!-- Floating WhatsApp CTA Button -->
+  <a href="https://wa.me/917219884594?text=Hello!%20I'd%20like%20to%20enquire%20about%20makeup." target="_blank" rel="noreferrer" class="wa-float-btn" aria-label="Chat on WhatsApp">
+    <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>
+  </a>
+
+  <!-- Mobile Sticky Bottom Booking Bar -->
+  <a href="booking.html" class="mobile-sticky-bar">
+    Book Your Appointment
+  </a>
+
+  <!-- Layout Responsive Style -->
+  <style>
+    @media (min-width: 768px) {
+      #aboutStoryGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

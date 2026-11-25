@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Moms Beauty Touch</title>
+  <meta name="description" content="Browse bridal, party, engagement and wedding makeup looks by Moms Beauty Touch.">
+  <meta property="og:title" content="Portfolio — Moms Beauty Touch">
+  <meta property="og:description" content="Browse bridal, party, engagement and wedding makeup looks by Moms Beauty Touch.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header glass">
+    <div class="container max-w-7xl site-header-inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/logo.png" alt="Moms Beauty Touch Logo" class="site-logo-img">
+        <span>Moms <em class="text-gold">Beauty</em> Touch</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Appointment</a>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false">
+        <svg class="icon" id="iconMenu" viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
+        <svg class="icon" id="iconClose" viewBox="0 0 24 24" style="display: none;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <nav class="mobile-nav-drawer" id="mobileDrawer">
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="services.html" class="mobile-nav-link">Services</a>
+      <a href="portfolio.html" class="mobile-nav-link active">Portfolio</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+      <a href="booking.html" class="mobile-nav-link">Book Appointment</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Hero Header -->
+    <section class="page-hero">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="page-hero-title">Looks we love</h1>
+    </section>
+
+    <!-- Portfolio Gallery Section -->
+    <section style="padding: 4rem 0 6rem;">
+      <div class="container max-w-7xl">
+
+        <!-- Category Filter Pills -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;" class="reveal">
+          <button type="button" class="btn-pill portfolio-filter-btn active" data-category="All">All</button>
+          <button type="button" class="btn-pill portfolio-filter-btn" data-category="Bridal">Bridal</button>
+          <button type="button" class="btn-pill portfolio-filter-btn" data-category="Party">Party</button>
+          <button type="button" class="btn-pill portfolio-filter-btn" data-category="Engagement">Engagement</button>
+          <button type="button" class="btn-pill portfolio-filter-btn" data-category="Wedding">Wedding</button>
+          <button type="button" class="btn-pill portfolio-filter-btn" data-category="Special Occasions">Special Occasions</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-columns reveal" style="margin-top: 3rem;" id="portfolioGrid">
+          <!-- Item 1: Bridal -->
+          <button type="button" class="gallery-item img-zoom" data-category="Bridal" aria-label="View bridal look">
+            <img src="assets/images/hero.jpg" alt="Sample bridal look" width="1280" height="1600" loading="lazy">
+          </button>
+
+          <!-- Item 2: Party -->
+          <button type="button" class="gallery-item img-zoom" data-category="Party" aria-label="View party look">
+            <img src="assets/images/party.jpg" alt="Sample party look" width="1024" height="1280" loading="lazy">
+          </button>
+
+          <!-- Item 3: Special Occasions -->
+          <button type="button" class="gallery-item img-zoom" data-category="Special Occasions" aria-label="View makeup kit">
+            <img src="assets/images/studio.jpg" alt="Makeup kit" width="1280" height="960" loading="lazy">
+          </button>
+
+          <!-- Item 4: Engagement -->
+          <button type="button" class="gallery-item img-zoom" data-category="Engagement" aria-label="View engagement look">
+            <img src="assets/images/party.jpg" alt="Sample engagement look" width="1024" height="1280" loading="lazy">
+          </button>
+
+          <!-- Item 5: Wedding -->
+          <button type="button" class="gallery-item img-zoom" data-category="Wedding" aria-label="View wedding look">
+            <img src="assets/images/hero.jpg" alt="Sample wedding look" width="1280" height="1600" loading="lazy">
+          </button>
+
+          <!-- Item 6: Bridal -->
+          <button type="button" class="gallery-item img-zoom" data-category="Bridal" aria-label="View bridal preparation">
+            <img src="assets/images/studio.jpg" alt="Bridal preparation" width="1280" height="960" loading="lazy">
+          </button>
+        </div>
+
+        <!-- Empty Filter State -->
+        <p id="portfolioEmpty" style="display: none; padding: 5rem 1rem; text-align: center; color: var(--muted-foreground);">
+          No photos in this category yet.
+        </p>
+
+        <!-- Sample Note -->
+        <div style="margin-top: 2rem; text-align: center;">
+          <p id="portfolioSampleNote" style="font-size: 0.75rem; color: var(--muted-foreground); font-style: italic;">
+            Sample images shown — the artist's real work will appear here soon.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">
+      <svg class="icon icon-2xl" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous Image">
+      <svg class="icon icon-2xl" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+    <img id="lightboxImg" class="lightbox-image" src="" alt="Full view">
+    <button class="lightbox-next" id="lightboxNext" aria-label="Next Image">
+      <svg class="icon icon-2xl" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container max-w-7xl footer-grid">
+      <div>
+        <p class="footer-brand">Moms Beauty Touch</p>
+        <p class="footer-desc">Professional makeup artistry in Vasai-Virar for bridal, wedding, party and engagement looks.</p>
+        <p class="footer-rating">
+          <svg class="icon icon-sm icon-gold-fill" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          4.52 on Google
+        </p>
+      </div>
+      <div>
+        <p class="footer-col-title">Visit</p>
+        <p class="footer-text">Near Manti Memorial High School, Naleswar Nagar, Kaner, Vasai-Virar, Maharashtra 401303, India</p>
+        <p class="footer-text" style="margin-top: 0.75rem;">Open 24 hours</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Explore</p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://www.instagram.com/moms_beauty_touch" target="_blank" rel="noreferrer" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+            <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Instagram
+          </a>
+          <a href="tel:+917219884594">+91 72198 84594</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      &copy; <span id="currentYear"></span> Moms Beauty Touch
+    </div>
+  </footer>
+
+  <!-- Floating Instagram CTA Button -->
+  <a href="https://www.instagram.com/moms_beauty_touch" target="_blank" rel="noreferrer" class="insta-float-btn" aria-label="Follow on Instagram">
+    <svg class="icon icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+  </a>
+
+  <!-- Floating WhatsApp CTA Button -->
+  <a href="https://wa.me/917219884594?text=Hello!%20I'd%20like%20to%20enquire%20about%20makeup." target="_blank" rel="noreferrer" class="wa-float-btn" aria-label="Chat on WhatsApp">
+    <svg class="icon icon-lg" viewBox="0 0 24 24"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path></svg>
+  </a>
+
+  <!-- Mobile Sticky Bottom Booking Bar -->
+  <a href="booking.html" class="mobile-sticky-bar">
+    Book Your Appointment
+  </a>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/portfolio.js"></script>
+</body>
+</html>
+
